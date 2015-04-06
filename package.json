@@ -1,0 +1,36 @@
+{
+  "name": "eslint-to-esformatter",
+  "description": "convert .eslintrc into esformatter json",
+  "version": "1.0.0",
+  "author": "Dan Flettre <fletd01@yahoo.com>",
+  "bugs": {
+    "url": "https://github.com/flet/eslint-to-esformatter/issues"
+  },
+  "devDependencies": {
+    "esformatter": "^0.6.1",
+    "faucet": "0.0.1",
+    "multiline": "^1.0.2",
+    "standard": "^3.3.2",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/flet/eslint-to-esformatter",
+  "license": "ISC",
+  "keywords": [
+    "eslint",
+    "esformatter",
+    "convert",
+    "format"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flet/eslint-to-esformatter.git"
+  },
+  "scripts": {
+    "test": "standard && faucet"
+  },
+  "dependencies": {
+    "lodash": "^3.6.0",
+    "require-directory": "^2.1.0"
+  }
+}
