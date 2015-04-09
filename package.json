@@ -1,7 +1,7 @@
 {
   "name": "eslint-to-esformatter",
   "description": "convert .eslintrc into esformatter json",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "author": "Dan Flettre <fletd01@yahoo.com>",
   "bugs": {
     "url": "https://github.com/flet/eslint-to-esformatter/issues"
