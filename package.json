@@ -10,7 +10,7 @@
     "esformatter": "^0.6.1",
     "faucet": "0.0.1",
     "multiline": "^1.0.2",
-    "standard": "^3.3.2",
+    "semistandard": "*",
     "tape": "^4.0.0"
   },
   "homepage": "https://github.com/flet/eslint-to-esformatter",
@@ -27,7 +27,7 @@
     "url": "https://github.com/flet/eslint-to-esformatter.git"
   },
   "scripts": {
-    "test": "standard && faucet"
+    "test": "semistandard && faucet"
   },
   "dependencies": {
     "lodash": "^3.6.0",

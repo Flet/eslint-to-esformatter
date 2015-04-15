@@ -1,8 +1,8 @@
-var convert = require('../')
-var multiline = require('multiline')
-var esformatter = require('esformatter')
+var convert = require('../');
+var multiline = require('multiline');
+var esformatter = require('esformatter');
 
-var test = require('tape')
+var test = require('tape');
 
 var code = multiline(function () {/*
 switch ('blah') {
@@ -11,17 +11,17 @@ switch ('blah') {
   default:
     console.log('nope')
 }
-*/})
+*/});
 
 test('brace-style rules', function (t) {
-  t.plan(transforms.length * 2)
+  t.plan(transforms.length * 2);
 
   transforms.forEach(function (obj) {
-    var opts = convert({rules: obj.rules})
-    t.deepEqual(opts, obj.output, obj.msg)
-    t.equal(esformatter.format(code, opts), obj.formatted, 'format using: ' + obj.msg)
-  })
-})
+    var opts = convert({rules: obj.rules});
+    t.deepEqual(opts, obj.output, obj.msg);
+    t.equal(esformatter.format(code, opts), obj.formatted, 'format using: ' + obj.msg);
+  });
+});
 
 var transforms = [
   {
@@ -56,4 +56,4 @@ var transforms = [
       }
     */})
   }
-]
+];
