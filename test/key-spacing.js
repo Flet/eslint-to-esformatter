@@ -1,4 +1,4 @@
-var testRule = require('./../test-rule');
+var testRule = require('./lib/test-rule');
 
 var multiline = require('multiline');
 

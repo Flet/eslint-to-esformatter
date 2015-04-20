@@ -1,9 +1,10 @@
-var convert = require('./../');
+var convert = require('./../../');
 var esformatter = require('esformatter');
 
 var test = require('tape');
 
-module.exports = function (name, transforms) {
+module.exports = function (name, transforms, options) {
+  if (options && options.skip) return;
   test(name, function (t) {
     t.plan(transforms.length);
 
