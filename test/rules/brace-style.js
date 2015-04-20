@@ -10,8 +10,7 @@ testRule('brace-style', [
       function foo() {
         return true;
       }
-    */}),
-    output: {}
+    */})
     // formatted: input
   },
   {
