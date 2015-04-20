@@ -77,7 +77,7 @@ testRule('indent', [
     formatted: '' +
       'if (a) {\n' +
       '\tb = c;\n' +
-      '\tfunction fn(d) {\n'+
+      '\tfunction fn(d) {\n' +
       '\t\te = f;\n' +
       '\t}\n' +
       '}'

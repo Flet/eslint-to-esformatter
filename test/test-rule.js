@@ -1,5 +1,4 @@
 var convert = require('./../');
-var multiline = require('multiline');
 var esformatter = require('esformatter');
 
 var test = require('tape');
