@@ -28,7 +28,8 @@
     "url": "https://github.com/flet/eslint-to-esformatter.git"
   },
   "scripts": {
-    "test": "semistandard && faucet"
+    "test": "semistandard && faucet",
+    "todo": "leasot *.js lib/**/*.js test/**/*.js -r markdown > TODO.md || echo Refreshed TODO.md."
   },
   "dependencies": {
     "debug": "^2.1.3",
