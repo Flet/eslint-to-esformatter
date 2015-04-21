@@ -8,10 +8,10 @@
   },
   "devDependencies": {
     "esformatter": "^0.6.1",
-    "faucet": "0.0.1",
     "leasot": "^1.2.1",
     "multiline": "^1.0.2",
     "semistandard": "*",
+    "tap-difflet": "^0.3.0",
     "tape": "^4.0.0"
   },
   "homepage": "https://github.com/flet/eslint-to-esformatter",
@@ -28,7 +28,7 @@
     "url": "https://github.com/flet/eslint-to-esformatter.git"
   },
   "scripts": {
-    "test": "semistandard && faucet",
+    "test": "semistandard && tape test/*.js | tap-difflet",
     "todo": "leasot *.js lib/**/*.js test/**/*.js -r markdown > TODO.md || echo Refreshed TODO.md."
   },
   "dependencies": {
