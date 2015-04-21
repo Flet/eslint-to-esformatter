@@ -10,6 +10,11 @@ testRule('key-spacing', [
       var obj = {
         foo : 42
       };
+    */}),
+    formatted: multiline.stripIndent(function () {/*
+      var obj = {
+        foo: 42
+      };
     */})
   },
   {
