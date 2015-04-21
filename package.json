@@ -9,6 +9,7 @@
   "devDependencies": {
     "esformatter": "^0.6.1",
     "faucet": "0.0.1",
+    "leasot": "^1.2.1",
     "multiline": "^1.0.2",
     "semistandard": "*",
     "tape": "^4.0.0"
