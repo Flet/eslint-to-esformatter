@@ -1,3 +1,5 @@
+var util = require('util');
+
 var _ = require('lodash');
 var debug = require('debug');
 
@@ -35,6 +37,8 @@ module.exports = function (cfg) {
       return true;
     })
     .forEach(function (rule) {
+      log('\t%s started...', rule);
+
       var ruleValue = 0;
       if (eslintRules.hasOwnProperty(rule)) { ruleValue = eslintRules[rule]; }
       var ruleArgs = !Array.isArray(ruleValue) ? [ruleValue] : ruleValue;
@@ -42,9 +46,12 @@ module.exports = function (cfg) {
       var transformer = transformers[rule];
 
       output = _.merge(output, transformer.apply(null, ruleArgs));
+
+      log('\t%s finished!\n', rule);
     });
 
   log('conversion finished!');
+  log('output:\n%s', util.inspect(output, { showHidden: false, depth: null }));
 
   return output;
 };
