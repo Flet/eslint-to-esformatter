@@ -1,4 +1,4 @@
 var testRule = require('./lib/test-rule');
 
 // todo: not supported
-testRule('(N/A) block-scoped-var', [], { skip: true });
+testRule('(N/A) camel-case', [], { skip: true });
