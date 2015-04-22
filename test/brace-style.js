@@ -63,7 +63,7 @@ testRule('brace-style', [
         baz();
       }
     */})
-  },
+  }
   // todo: re-add test when https://github.com/millermedeiros/esformatter/issues/312 is fixed
   // {
   //   msg: 'rule on, stroustrup',
